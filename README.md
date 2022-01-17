@@ -18,7 +18,7 @@ Version: 1.0
 
 |                    Requirement                     |          Version           |  Required Commands \*  |
 |:--------------------------------------------------:|:--------------------------:|:----------------------:|
-|        [wget]        |         -         |        wget        |
+|        [curl]        |         -         |        curl        |
 
 \* These commands must be accessible from your `$PATH` (*i.e.* you
 should be able to invoke them from your command line).
