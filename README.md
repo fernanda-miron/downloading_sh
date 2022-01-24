@@ -2,7 +2,7 @@
 
 # **Automated file download**
 
-Bash script that allows downloading of files in an automated way
+Nextflow pipeline that allows downloading of files in an automated way
 given a TSV file with links
 Version: 1.0
 
@@ -19,6 +19,7 @@ Version: 1.0
 |                    Requirement                     |          Version           |  Required Commands \*  |
 |:--------------------------------------------------:|:--------------------------:|:----------------------:|
 |        [curl]        |         -         |        curl        |
+| [Nextflow] | 21.10.5 | Running pipeline | 
 
 \* These commands must be accessible from your `$PATH` (*i.e.* you
 should be able to invoke them from your command line).
@@ -35,7 +36,7 @@ Download sh_downloading from Github repository:
 
 To test sh_downloading execution using test data, run:
 
-    bash script.sh corrected.tsv
+    nextflow run process-per-csv-record.nf
 
 for each row of the TSV file will be a directory with the downloads
 
@@ -45,7 +46,7 @@ for each row of the TSV file will be a directory with the downloads
 
 To run with your own data go to the pipeline directory and execute:
  
-  bash script.sh your_tsv
+  nextflow run process-per-csv-record.nf 
 
 ------------------------------------------------------------------------
 
